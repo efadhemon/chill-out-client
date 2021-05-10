@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header/Header';
+import FoodCategoryNav from './components/FoodCategoryNav/FoodCategoryNav';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import SearchField from './components/SearchField/SearchField';
+import FoodsBox from './components/FoodsBox/FoodsBox';
+import FoodDetails from './components/FoodDetails/FoodDetails';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header></Header>
+      <Switch>
+        <Route exact path='/'>
+          <SearchField></SearchField>
+          <FoodCategoryNav></FoodCategoryNav>
+          <FoodsBox></FoodsBox>
+        </Route>
+        <Route exact path='/foods/:category'>
+          <FoodCategoryNav></FoodCategoryNav>
+          <FoodsBox></FoodsBox>
+        </Route>
+        <Route exact path='/foods/:category/:id'>
+          <FoodCategoryNav></FoodCategoryNav>
+          <FoodDetails></FoodDetails>
+        </Route>
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;

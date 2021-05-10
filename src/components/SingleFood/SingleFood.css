@@ -1,0 +1,16 @@
+.SingleFood {
+    overflow: hidden;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.SingleFood img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.SingleFood:hover {
+    box-shadow: 0px 0px 80px 10px lightgray;
+}

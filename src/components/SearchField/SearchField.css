@@ -1,0 +1,44 @@
+.search-field{
+    background: url(../../Image/bannerbackground.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    place-content: center;
+    text-align: center;
+}
+
+.search-field .search-field-tittle {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-top: -50px;
+}
+.search-field .search-area {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-top: 50px;
+}
+.search-field .search-area input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    width: 400px;
+    z-index: -1;
+}
+.search-field .search-area button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: -70px;
+    z-index: 10;
+}
+
