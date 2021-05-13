@@ -1,4 +1,26 @@
-.FoodsBox{
+
+.food-box .food-category-nav{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    margin: 50px 0;
+}
+
+.food-box .food-category-nav .nav-link{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 !important;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.food-box .food-category-nav .nav-link.active{
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.food-box .food-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;

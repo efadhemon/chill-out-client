@@ -1,6 +1,68 @@
+.header{
+    height: 100px;
+}
+.header .nav-item .nav-link.login-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.header .nav-item .nav-link.cart {
+    font-size: 25px;
+}
+.header .nav-item .nav-link.cart-added{
+    color: red;
+}
 
-.navbar .navbar-nav {
-    position: absolute;
-    right: 0;
-    margin-right: 50px;
+.header .navbar-nav{
+    align-items: center;
+}
+
+.header .navbar .brand-logo{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header .nav-item .nav-link.user-avatar{
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#loggedIn-user-info {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    top: 100px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 #d3d3d3a9;
+}
+.display-none{
+    display: none;
+}
+
+#loggedIn-user-info img {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Responsive css */
+
+@media (max-width: 991px){
+    
+    #loggedIn-user-info{
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .header .navbar .brand-logo{
+        font-size: 25px;
+    }
 }
