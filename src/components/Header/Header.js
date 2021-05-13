@@ -31,7 +31,7 @@ const Header = (props) => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                         <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
-                            <li className="nav-item mr-5">
+                            <li className="nav-item mr-lg-5">
                                 <Link to="/checkout" className={props.cart.length !== 0 ? 'nav-link cart cart-added' : 'nav-link cart'}><FontAwesomeIcon icon={faCartArrowDown} /> <span>{props.cart.length}</span></Link>
                             </li>
                             <li className="nav-item">
