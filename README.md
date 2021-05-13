@@ -20,7 +20,7 @@ A single page restaurant app where people are able to select food in their cart 
 * Firebase Athuentication 
 * Stripe.js
 
-[Back-end Repository](https://github.com/mohammademon551/chill-out-client);
+[Back-end Repository](https://github.com/mohammademon551/chill-out-server);
 
 
 ### Hi I'm Mohammad Emon 
